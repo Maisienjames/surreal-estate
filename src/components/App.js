@@ -1,23 +1,22 @@
-import '../styles/app.css';
+import React from "react";
+import "../styles/app.css";
+import { Route, Switch } from "react-router-dom";
+import Navbar from "./Navbar";
+import Properties from "./Properties";
+import AddProperty from "./AddProperty";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Surreal Estate
-        </a>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Properties} />
+          <Route exact path="/add-property" component={AddProperty} />
+        </Switch>
       </header>
     </div>
   );
-}
+};
 
 export default App;
