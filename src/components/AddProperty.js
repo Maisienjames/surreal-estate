@@ -76,22 +76,36 @@ const AddProperty = () => {
 
         <label htmlFor="bedrooms">
           Bedrooms
-          <input
+          <select
             id="bedrooms"
             name="bedrooms"
             value={fields.bedrooms}
             onChange={handleFieldChange}
-          />
+          >
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>5+</option>
+          </select>
         </label>
 
         <label htmlFor="bathrooms">
           Bathrooms
-          <input
+          <select
             id="bathrooms"
             name="bathrooms"
             value={fields.bathrooms}
             onChange={handleFieldChange}
-          />
+          >
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>5+</option>
+          </select>
         </label>
 
         <label htmlFor="price">

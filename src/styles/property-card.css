@@ -1,0 +1,13 @@
+.property-card {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px outset grey;
+    /* border-color: black;
+    border-width: 30px;
+    border-style: solid; */
+    border-radius: 15px;
+    margin: 30px;
+    padding: 20px;
+}
