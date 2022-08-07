@@ -8,10 +8,10 @@ describe("PropertyCard", () => {
     title: "Stub title",
     type: "Stub type",
     bathrooms: 11,
-    bedrooms: 11,
+    bedrooms: 5,
     price: 1111111,
-    city: "",
-    email: "",
+    city: "Manchester",
+    email: "joebloggs@gmail.com",
   };
 
   test("renders correctly", () => {
@@ -45,9 +45,9 @@ describe("PropertyCard", () => {
     expect(getByText("Stub title")).toHaveClass("property-card__title");
     expect(getByText("Stub type")).toHaveClass("property-card__type");
     expect(getByText(11)).toHaveClass("property-card__bathrooms");
-    expect(getByText(11)).toHaveClass("property-card__bedrooms");
+    expect(getByText(5)).toHaveClass("property-card__bedrooms");
     expect(getByText(1111111)).toHaveClass("property-card__price");
-    expect(getByText("")).toHaveClass("property-card__city");
-    expect(getByText("")).toHaveClass("property-card__email");
+    expect(getByText("Manchester")).toHaveClass("property-card__city");
+    expect(getByText("joebloggs@gmail.com")).toHaveClass("property-card__email");
   });
 });

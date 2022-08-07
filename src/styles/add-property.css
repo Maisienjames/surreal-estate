@@ -23,3 +23,15 @@ button {
     color: white;
     border-radius: 30px;
 }
+
+.alert-error {
+    background-color: lightcoral;
+    border: 2px solid darkred;
+    border-radius: 20px;
+}
+
+.alert-success {
+    background-color: rgb(133, 230, 48);
+    border: 2px solid darkgreen;
+    border-radius: 20px;
+}

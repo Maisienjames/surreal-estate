@@ -4,7 +4,12 @@
     font-size: 15px;
     color: darkslategrey;
     font-family: 'Nunito', sans-serif;
+    position: relative;
   }
+
+.properties__wrap {
+    margin-left: 155px;
+}
   
   .properties > .item {
     display: inline-block;

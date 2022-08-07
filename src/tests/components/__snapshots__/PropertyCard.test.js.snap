@@ -23,7 +23,7 @@ exports[`PropertyCard renders correctly 1`] = `
     <div
       class="property-card__bedrooms"
     >
-      11
+      5
     </div>
     <div
       class="property-card__price"
@@ -32,10 +32,14 @@ exports[`PropertyCard renders correctly 1`] = `
     </div>
     <div
       class="property-card__city"
-    />
+    >
+      Manchester
+    </div>
     <div
       class="property-card__email"
-    />
+    >
+      joebloggs@gmail.com
+    </div>
   </div>
 </DocumentFragment>
 `;
